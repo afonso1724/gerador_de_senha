@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #13121a;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12;
+}
+
+img{
+    width: 100px;
+}
+
+#title{
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#password_container{
+    width: 100%;
+    max-width: 400px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21232b;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 18px ;
+    margin-bottom: 10px;
+}
+
+#password_container.show{
+    display: flex;
+}
+
+#password{
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#copy{
+    background-color: transparent;
+    border: none;
+    color:#8BC34A;
+    height: 40px;
+    width: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#copy:hover{
+    color: #8BC34AA6;
+}
+
+#password_items{
+    width: 400px;
+    background-color: #21232b;
+    color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px;
+}
+
+.item{
+    display: flex;
+    gap: 14px;
+
+}
+
+#size{
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+}
+
+#size::-webkit-inner-spin-button,
+#size ::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+#size:focus{
+    outline: 1px solid #8BC34A;
+}
+
+#generate{
+    background-color: #8BC34A;
+    border: none;
+    margin-top: 12px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    color: #13121a;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+#generate:hover{
+    background-color: #8BC34AA6;
+}
+
+#footer{
+    color: #8BC34A;
+    font-style: italic;
+    font-weight: 500;
+}
